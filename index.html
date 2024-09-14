@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUAT SHAKIRA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+        .hidden {
+            display: none;
+        }
+        h1 {
+            color: #e63946;
+        }
+        input[type="password"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #e63946;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .heart {
+            color: #e63946;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dimana pertama kali kita ngedate?</h1>
+        <input type="password" id="password" placeholder="ketik disini sha" />
+        <button onclick="checkPassword()">yakin?</button>
+        <div id="message" class="hidden">
+            <h2>♥ LOVE U SHAKIRA ♥</h2>
+            <p>gatau si</p>
+            <p>Aku cuma gabut wkwkwkwkwkwkwkwkwkw</p>
+            <p>HARI SENIN JADII YAAA ???  <span class="heart">♥</span></p>
+            <p class="signature">love u more love u so much,<br>from alfarisi eak hahah</p>
+        </div>
+    </div>
+
+    <script>
+        const correctPassword = 'ancol';  // Ganti dengan password yang diinginkan
+
+        function checkPassword() {
+            const inputPassword = document.getElementById('password').value;
+            const messageDiv = document.getElementById('message');
+
+            if (inputPassword === correctPassword) {
+                messageDiv.classList.remove('hidden');
+            } else {
+                alert('Parah bgt shakira ga inget');
+            }
+        }
+    </script>
+</body>
+</html>
